@@ -3,53 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kakilab.it</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f1115;
-      color: #f3f4f6;
-      padding: 2rem;
-    }
-    main {
-      text-align: center;
-      max-width: 520px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: -0.03em;
-      margin-bottom: 0.75rem;
-    }
-    p {
-      color: #9ca3af;
-      font-size: 1.05rem;
-      line-height: 1.6;
-    }
-    .badge {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.4rem 0.9rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      color: #d1d5db;
-      font-size: 0.85rem;
-    }
-  </style>
+  <title>Kaki Lab — Daniele &amp; Giorgia Lab | Sito in costruzione</title>
+  <meta name="description" content="Kaki Lab — Daniele &amp; Giorgia Lab. Design, personalizzazione e stampa 3D. Il nostro nuovo sito è in costruzione.">
+  <meta property="og:title" content="Kaki Lab — Daniele &amp; Giorgia Lab">
+  <meta property="og:description" content="Design, personalizzazione e stampa 3D. Sito in costruzione.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kakilab.it/">
+  <meta name="theme-color" content="#FAF6EE">
+
+  <!-- Kaki SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M60 36c-22 0-40 13-40 34 0 22 15 38 30 38 5 0 8-2 10-2s5 2 10 2c15 0 30-16 30-38 0-21-18-34-40-34z' fill='%23FF5B00'/%3E%3Cpath d='M60 49c-7 0-12-9-19-10-6-1-12 2-15 0 4-8 14-12 25-9 2-7 6-14 11-16 3-1 5 2 3 5-2 3-4 7-4 11 11-3 21 1 25 9-3 2-9-1-15 0-7 1-12 10-19 10z' fill='%23000000'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: High-contrast Serif + Thin Condensed Sans + Clean Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>kakilab.it</h1>
-    <p>Il dominio è collegato correttamente a GitHub Pages. Il sito è in preparazione.</p>
-    <span class="badge">Coming soon</span>
+  <!-- Subtle sunlit botanical shadow decor -->
+  <svg class="sunlight-leaves" viewBox="0 0 320 320" fill="currentColor" aria-hidden="true">
+    <path d="M-10,20 C60,10 120,45 155,105 C95,115 35,85 -10,20 Z" />
+    <path d="M40,-10 C95,25 130,90 125,160 C65,135 25,70 40,-10 Z" />
+    <path d="M-20,120 C45,105 110,130 155,185 C95,205 30,180 -20,120 Z" />
+    <path d="M120,25 C175,15 230,45 265,95 C210,115 155,85 120,25 Z" />
+  </svg>
+  <svg class="sunlight-leaves-right" viewBox="0 0 320 320" fill="currentColor" aria-hidden="true">
+    <path d="M-10,20 C60,10 120,45 155,105 C95,115 35,85 -10,20 Z" />
+    <path d="M40,-10 C95,25 130,90 125,160 C65,135 25,70 40,-10 Z" />
+    <path d="M-20,120 C45,105 110,130 155,185 C95,205 30,180 -20,120 Z" />
+  </svg>
+
+  <header class="site-header">
+    <a href="https://kakilab.it/" class="header-domain">kakilab.it</a>
+    <span class="header-status">Daniele &amp; Giorgia Lab</span>
+  </header>
+
+  <main class="stage">
+    <section class="content" aria-labelledby="main-heading">
+      <div class="brand-mark">
+        <!-- Custom Kaki Lab Emblem SVG inspired by brand identity -->
+        <svg class="kaki-emblem" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Kaki Lab">
+          <!-- Outer double circle frame -->
+          <circle cx="80" cy="80" r="74" stroke="#000000" stroke-width="2.2" />
+          <circle cx="80" cy="80" r="69.5" stroke="#000000" stroke-width="1" />
+
+          <!-- Persimmon (Kaki) Fruit -->
+          <path
+            d="M80 48C56 48 39 62 39 85C39 109 54 126 70 126C75.5 126 78 123.5 80 123.5C82 123.5 84.5 126 90 126C106 126 121 109 121 85C121 62 104 48 80 48Z"
+            fill="#FF5B00"
+          />
+
+          <!-- Subtle white highlight separating calyx from fruit -->
+          <path
+            d="M52 55C60 58 67 66 80 66C93 66 100 58 108 55"
+            stroke="#FAF6EE"
+            stroke-width="3.2"
+            stroke-linecap="round"
+          />
+
+          <!-- Black 4-petal Calyx & Stem -->
+          <path
+            d="M80 63.5C75.5 63.5 72.5 56 66 53.5C59 51 51 54.5 47 52C50.5 43.5 61 39.5 72.5 42.5C74.5 35.5 79.5 29 85.5 27.5C88.5 26.8 90.5 29.5 88.5 32.5C85.5 36.5 83.5 39.5 83.5 43C95.5 39.5 107.5 43.5 112 52C107.5 54.5 100 51 93.5 53.5C87 56 84.5 63.5 80 63.5Z"
+            fill="#000000"
+          />
+        </svg>
+
+        <p class="brand-wordmark">Daniele &amp; Giorgia Lab</p>
+      </div>
+
+      <div class="divider" aria-hidden="true">
+        <span class="divider-line"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-line"></span>
+      </div>
+
+      <h1 id="main-heading" class="headline">
+        Sito in <em>costruzione</em>
+      </h1>
+
+      <p class="subtitle">
+        Stiamo dando forma al nostro nuovo spazio digitale. Presto potrai scoprire
+        le nostre creazioni tra design, oggetti personalizzati e stampa 3D.
+      </p>
+
+      <ul class="disciplines" aria-label="Le nostre attività">
+        <li>Design</li>
+        <li class="sep" aria-hidden="true"></li>
+        <li>Personalizzazione</li>
+        <li class="sep" aria-hidden="true"></li>
+        <li>Stampa 3D</li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 <span class="footer-accent">Kaki Lab</span></span>
+    <span>Presto online</span>
+  </footer>
 </body>
 </html>
