@@ -126,9 +126,8 @@ body::after {
 .header-status {
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 0.9rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
   color: var(--kaki-muted);
 }
 
@@ -178,11 +177,10 @@ body::after {
 .brand-wordmark {
   font-family: var(--font-sans);
   font-weight: 300;
-  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
+  font-size: clamp(1.1rem, 2.3vw, 1.45rem);
+  letter-spacing: 0.24em;
   color: var(--kaki-black);
-  padding-left: 0.42em; /* optical balance for wide tracking */
+  padding-left: 0.24em; /* optical balance for tracking */
 }
 
 /* Editorial Rule */
@@ -331,8 +329,8 @@ body::after {
   }
 
   .brand-wordmark {
-    letter-spacing: 0.3em;
-    padding-left: 0.3em;
+    letter-spacing: 0.16em;
+    padding-left: 0.16em;
   }
 
   .disciplines {
