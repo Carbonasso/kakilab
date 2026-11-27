@@ -3,18 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KAKILAB by Daniele e Giorgia | Sito in costruzione</title>
-  <meta name="description" content="KAKILAB by Daniele e Giorgia. Design, personalizzazione e stampa 3D. Il nostro nuovo sito è in costruzione.">
+  <title>KAKILAB by Daniele e Giorgia — Design, Personalizzazione &amp; Stampa 3D</title>
+  <meta name="description" content="KAKILAB by Daniele e Giorgia a Codevigo (PD): oggetti decorativi di design, buste per inviti da matrimonio, quadretti in rilievo, organizer e personalizzazioni in stampa 3D e vinile.">
   <meta property="og:title" content="KAKILAB by Daniele e Giorgia">
-  <meta property="og:description" content="Design, personalizzazione e stampa 3D. Sito in costruzione.">
+  <meta property="og:description" content="Design, personalizzazione, stampa 3D e taglio di precisione. Codevigo (PD) e online su Etsy.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kakilab.it/">
   <meta name="theme-color" content="#FAF6EE">
 
-  <!-- Kaki SVG Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath d='M60 36c-22 0-40 13-40 34 0 22 15 38 30 38 5 0 8-2 10-2s5 2 10 2c15 0 30-16 30-38 0-21-18-34-40-34z' fill='%23FF5B00'/%3E%3Cpath d='M60 49c-7 0-12-9-19-10-6-1-12 2-15 0 4-8 14-12 25-9 2-7 6-14 11-16 3-1 5 2 3 5-2 3-4 7-4 11 11-3 21 1 25 9-3 2-9-1-15 0-7 1-12 10-19 10z' fill='%23000000'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="assets/caco.svg">
 
-  <!-- Google Fonts: High-contrast Serif + Thin Condensed Sans + Clean Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
@@ -22,103 +20,473 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Subtle sunlit botanical shadow decor -->
-  <svg class="sunlight-leaves" viewBox="0 0 320 320" fill="currentColor" aria-hidden="true">
-    <path d="M-10,20 C60,10 120,45 155,105 C95,115 35,85 -10,20 Z" />
-    <path d="M40,-10 C95,25 130,90 125,160 C65,135 25,70 40,-10 Z" />
-    <path d="M-20,120 C45,105 110,130 155,185 C95,205 30,180 -20,120 Z" />
-    <path d="M120,25 C175,15 230,45 265,95 C210,115 155,85 120,25 Z" />
-  </svg>
-  <svg class="sunlight-leaves-right" viewBox="0 0 320 320" fill="currentColor" aria-hidden="true">
-    <path d="M-10,20 C60,10 120,45 155,105 C95,115 35,85 -10,20 Z" />
-    <path d="M40,-10 C95,25 130,90 125,160 C65,135 25,70 40,-10 Z" />
-    <path d="M-20,120 C45,105 110,130 155,185 C95,205 30,180 -20,120 Z" />
-  </svg>
+  <!-- Sticky Navigation -->
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand" aria-label="KAKILAB Home">
+        <img src="assets/caco.svg" alt="Logo KAKILAB" class="nav-logo">
+        <span class="nav-brand-text">
+          <span class="nav-brand-title">KAKILAB</span>
+          <span class="nav-brand-sub">by Daniele e Giorgia</span>
+        </span>
+      </a>
 
-  <header class="site-header">
-    <a href="https://kakilab.it/" class="header-domain">kakilab.it</a>
-    <span class="header-status">KAKILAB by Daniele e Giorgia</span>
-  </header>
+      <nav aria-label="Navigazione principale">
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#creazioni">Creazioni</a></li>
+          <li><a href="#personalizzazioni">Personalizzazioni</a></li>
+          <li><a href="#laboratorio">Laboratorio</a></li>
+          <li><a href="#etsy">Etsy</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
 
-  <main class="stage">
-    <section class="content" aria-labelledby="main-heading">
-      <div class="brand-mark">
-        <!-- Custom Kaki Lab Emblem SVG inspired by brand identity -->
-        <svg class="kaki-emblem" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo KAKILAB">
-          <!-- Outer double circle frame -->
-          <circle cx="80" cy="80" r="74" stroke="#000000" stroke-width="2.2" />
-          <circle cx="80" cy="80" r="69.5" stroke="#000000" stroke-width="1" />
-
-          <!-- Persimmon (Kaki) Fruit -->
-          <path
-            d="M80 48C56 48 39 62 39 85C39 109 54 126 70 126C75.5 126 78 123.5 80 123.5C82 123.5 84.5 126 90 126C106 126 121 109 121 85C121 62 104 48 80 48Z"
-            fill="#FF5B00"
-          />
-
-          <!-- Subtle white highlight separating calyx from fruit -->
-          <path
-            d="M52 55C60 58 67 66 80 66C93 66 100 58 108 55"
-            stroke="#FAF6EE"
-            stroke-width="3.2"
-            stroke-linecap="round"
-          />
-
-          <!-- Black 4-petal Calyx & Stem -->
-          <path
-            d="M80 63.5C75.5 63.5 72.5 56 66 53.5C59 51 51 54.5 47 52C50.5 43.5 61 39.5 72.5 42.5C74.5 35.5 79.5 29 85.5 27.5C88.5 26.8 90.5 29.5 88.5 32.5C85.5 36.5 83.5 39.5 83.5 43C95.5 39.5 107.5 43.5 112 52C107.5 54.5 100 51 93.5 53.5C87 56 84.5 63.5 80 63.5Z"
-            fill="#000000"
-          />
-        </svg>
-
-        <p class="brand-wordmark">KAKILAB by Daniele e Giorgia</p>
-      </div>
-
-      <div class="divider" aria-hidden="true">
-        <span class="divider-line"></span>
-        <span class="divider-dot"></span>
-        <span class="divider-line"></span>
-      </div>
-
-      <h1 id="main-heading" class="headline">
-        Sito in <em>costruzione</em>
-      </h1>
-
-      <p class="subtitle">
-        Stiamo dando forma al nostro nuovo spazio digitale. Presto potrai scoprire
-        le nostre creazioni tra design, oggetti personalizzati e stampa 3D.
-      </p>
-
-      <ul class="disciplines" aria-label="Le nostre attività">
-        <li>Design</li>
-        <li class="sep" aria-hidden="true"></li>
-        <li>Personalizzazione</li>
-        <li class="sep" aria-hidden="true"></li>
-        <li>Stampa 3D</li>
-      </ul>
-
-      <div class="social-cta">
+      <div class="nav-actions">
         <a
-          id="instagram-link"
-          class="social-link"
-          href="https://www.instagram.com/kakilab.dg/"
+          href="https://www.etsy.com/shop/DGLab3D"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Seguici su Instagram @kakilab.dg"
+          class="btn btn-primary nav-etsy-btn"
+          id="nav-etsy-link"
         >
-          <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" />
-            <circle cx="12" cy="12" r="4.25" />
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-          </svg>
-          <span>@kakilab.dg</span>
+          Shop Etsy
         </a>
+        <button
+          type="button"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Apri menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-brand-tag">
+            <img src="assets/caco.svg" alt="" aria-hidden="true">
+            <span>KAKILAB by Daniele e Giorgia</span>
+          </div>
+
+          <h1 class="hero-title">
+            Oggetti decorativi, fatti <em>su misura</em>.
+          </h1>
+
+          <p class="hero-text">
+            Progettiamo e realizziamo complementi di design per la casa, buste per inviti da matrimonio,
+            quadretti in rilievo, organizer e personalizzazioni artigianali con stampa 3D, taglio di precisione e vinile.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#creazioni" class="btn btn-primary" id="hero-explore-btn">Scopri le creazioni</a>
+            <a href="#contatti" class="btn btn-secondary" id="hero-quote-btn">Richiedi un preventivo</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Codevigo, Padova</span>
+            <span class="hero-meta-dot" aria-hidden="true"></span>
+            <span>Vendita online su Etsy</span>
+            <span class="hero-meta-dot" aria-hidden="true"></span>
+            <span>Progetti su richiesta</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-photo-main">
+            <img src="assets/images/relief-wall-art.jpg" alt="Quadretto decorativo in rilievo 3D KAKILAB">
+          </div>
+          <div class="hero-side-stack">
+            <div class="hero-photo-side">
+              <img src="assets/images/wedding-envelopes.jpg" alt="Buste per inviti da matrimonio tagliate di precisione">
+            </div>
+            <div class="hero-note-card">
+              <img src="assets/caco.svg" alt="Simbolo KAKILAB">
+              <div>
+                <strong>Piccolo laboratorio creativo</strong>
+                <p>Ogni creazione nasce da zero tra cura estetica, materiali selezionati e finiture pulite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disciplines Strip -->
+    <div class="disciplines-band" aria-label="Discipline principali">
+      <div class="container">
+        <ul class="disciplines-list">
+          <li>Design</li>
+          <li class="dot" aria-hidden="true"></li>
+          <li>Personalizzazione</li>
+          <li class="dot" aria-hidden="true"></li>
+          <li>Stampa 3D</li>
+          <li class="dot" aria-hidden="true"></li>
+          <li>Taglio &amp; Vinile</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Showcase / Catalog -->
+    <section id="creazioni" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <span class="eyebrow">Vetrina</span>
+            <h2 class="section-title">Le nostre <em>creazioni</em></h2>
+            <p class="section-lead">
+              Esplora le tipologie di oggetti che realizziamo nel nostro laboratorio. Clicca su una creazione per scoprire materiali e opzioni di personalizzazione.
+            </p>
+          </div>
+          <div id="filter-bar" class="filter-bar" role="group" aria-label="Filtra per categoria"></div>
+        </div>
+
+        <div id="catalog-grid" class="catalog-grid reveal"></div>
+      </div>
+    </section>
+
+    <!-- Personalizzazioni -->
+    <section id="personalizzazioni" class="section section-sand">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Su misura</span>
+          <h2 class="section-title">Come funziona una <em>personalizzazione</em></h2>
+          <p class="section-lead">
+            Dalla palette colori di un matrimonio a un oggetto pensato per la tua scrivania o un regalo unico: ti accompagniamo dall’idea iniziale al pezzo finito.
+          </p>
+        </div>
+
+        <div class="steps-grid reveal">
+          <article class="step-card">
+            <span class="step-num">01</span>
+            <h3>Raccontaci la tua idea</h3>
+            <p>Scrivici cosa stai cercando: un invito da matrimonio, un quadretto, un organizer o una scritta su tessuto.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">02</span>
+            <h3>Scelta materiali &amp; bozza</h3>
+            <p>Definiamo insieme forme, dimensioni, carte, colori di filamento o vinile e prepariamo un preventivo chiaro.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">03</span>
+            <h3>Realizzazione in laboratorio</h3>
+            <p>Produciamo ogni pezzo con cura nel nostro laboratorio a Codevigo, controllando dettagli e finiture a mano.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-num">04</span>
+            <h3>Consegna o spedizione</h3>
+            <p>Ritiro a mano in zona Codevigo (PD) oppure spedizione accurata in tutta Italia, anche tramite Etsy.</p>
+          </article>
+        </div>
+
+        <div class="custom-highlights reveal">
+          <p>
+            <strong>Hai un evento, un matrimonio o un’idea fuori catalogo?</strong> Possiamo creare piccole serie coordinate o pezzi unici calibrati sul tuo stile.
+          </p>
+          <a href="#contatti" class="btn btn-primary" id="custom-quote-cta">Chiedi un preventivo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Laboratorio: Tecniche & Strumenti -->
+    <section id="laboratorio" class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Il laboratorio</span>
+          <h2 class="section-title">Tecniche e <em>strumenti</em></h2>
+          <p class="section-lead">
+            Dietro ogni oggetto c’è una combinazione di progettazione digitale e lavorazione precisa con strumenti affidabili.
+          </p>
+        </div>
+
+        <div class="craft-grid reveal">
+          <article class="craft-card">
+            <span class="craft-index">Tecnica 01</span>
+            <h3>Stampa 3D di precisione</h3>
+            <span class="craft-tool">Bambu Lab H2C</span>
+            <p>
+              Realizziamo oggetti decorativi per la casa, quadretti in bassorilievo e organizer con superfici pulite, geometrie definite e combinazioni multicolore curate.
+            </p>
+            <ul class="craft-tags">
+              <li>Quadretti in rilievo</li>
+              <li>Organizer</li>
+              <li>Oggetti casa</li>
+              <li>Finiture opache</li>
+            </ul>
+          </article>
+
+          <article class="craft-card">
+            <span class="craft-index">Tecnica 02</span>
+            <h3>Taglio di precisione &amp; cartotecnica</h3>
+            <span class="craft-tool">Modulo di taglio Bambu Lab</span>
+            <p>
+              Tagli netti e dettagliati su carta e cartoncino per buste da matrimonio, inviti intagliati, etichette coordinate e decorazioni leggere per eventi.
+            </p>
+            <ul class="craft-tags">
+              <li>Buste matrimonio</li>
+              <li>Inviti &amp; segnaposto</li>
+              <li>Intagli botanici</li>
+              <li>Cartoncini materici</li>
+            </ul>
+          </article>
+
+          <article class="craft-card">
+            <span class="craft-index">Tecnica 03</span>
+            <h3>Vinile adesivo &amp; su tessuti</h3>
+            <span class="craft-tool">Vinile adesivo + Termoadesivo (HTV)</span>
+            <p>
+              Personalizziamo sia superfici rigide con vinile adesivo resistente sia tessuti con vinile trasferibile a calore, per grafiche nitide e durature.
+            </p>
+            <ul class="craft-tags">
+              <li>Tote bag &amp; tessuti</li>
+              <li>Vetro &amp; superfici</li>
+              <li>Nomi &amp; grafiche</li>
+              <li>Packaging personalizzato</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Etsy & Vendita Locale -->
+    <section id="etsy" class="section section-sand">
+      <div class="container">
+        <div class="reveal">
+          <span class="eyebrow">Dove trovarci</span>
+          <h2 class="section-title">Online su <em>Etsy</em> e dal vivo</h2>
+        </div>
+
+        <div class="channels-grid reveal">
+          <div class="channel-panel">
+            <div>
+              <span class="eyebrow">Shop &amp; Recensioni</span>
+              <h3>Acquista online sul nostro negozio Etsy</h3>
+              <p>
+                Puoi ordinare le nostre creazioni pronte e leggere le opinioni di chi ha già scelto il nostro laboratorio direttamente sul nostro shop Etsy.
+              </p>
+
+              <div id="etsy-reviews-list" class="reviews-list">
+                <div class="review-item">
+                  <div class="review-stars" aria-label="Recensioni verificate su Etsy">★★★★★</div>
+                  <p class="review-text">
+                    Scopri tutte le recensioni verificate e le ultime creazioni disponibili direttamente sulla nostra pagina Etsy.
+                  </p>
+                  <p class="review-author">Recensioni verificate · Shop Etsy</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="channel-actions">
+              <a
+                href="https://www.etsy.com/shop/DGLab3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-orange"
+                id="etsy-shop-btn"
+              >
+                Visita lo shop Etsy
+              </a>
+              <a
+                href="https://www.etsy.com/shop/DGLab3D#reviews"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+                id="etsy-reviews-btn"
+              >
+                Leggi le recensioni
+              </a>
+            </div>
+          </div>
+
+          <div class="channel-panel channel-panel-dark">
+            <div>
+              <span class="eyebrow">Vendita fisica</span>
+              <h3>Codevigo, in provincia di Padova</h3>
+              <p>
+                Oltre alla vendita online, lavoriamo sul territorio per consegne locali, incontri dedicati a eventi e matrimoni e progetti su misura.
+              </p>
+              <ul class="local-list">
+                <li>Ritiro diretto a mano su appuntamento a Codevigo (PD)</li>
+                <li>Consulenza su colori, carte e finiture per inviti e bomboniere</li>
+                <li>Spedizioni tracciate in tutta Italia</li>
+              </ul>
+            </div>
+
+            <div class="channel-actions">
+              <a href="#contatti" class="btn btn-orange">Scrivici per un incontro</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatti & Preventivi -->
+    <section id="contatti" class="section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <span class="eyebrow">Contatti</span>
+          <h2 class="section-title">Parliamo del tuo <em>progetto</em></h2>
+          <p class="section-lead">
+            Hai una domanda, vuoi un preventivo gratuito o desideri personalizzare una creazione? Compila il modulo o scrivici direttamente sui nostri canali.
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:kakilab.dg@gmail.com" class="contact-row" id="contact-email-link">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+                  <path d="M3.5 6l8.5 6.5L20.5 6" />
+                </svg>
+              </span>
+              <span>
+                <span class="contact-row-label">Email diretta</span>
+                <span class="contact-row-value">kakilab.dg@gmail.com</span>
+              </span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/kakilab.dg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-row"
+              id="contact-instagram-link"
+            >
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" />
+                  <circle cx="12" cy="12" r="4.25" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </span>
+              <span>
+                <span class="contact-row-label">Instagram</span>
+                <span class="contact-row-value">@kakilab.dg</span>
+              </span>
+            </a>
+
+            <div class="contact-row">
+              <span class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 1 1 13 0c0 5.4-6.5 11-6.5 11z" />
+                  <circle cx="12" cy="10" r="2.25" />
+                </svg>
+              </span>
+              <span>
+                <span class="contact-row-label">Laboratorio</span>
+                <span class="contact-row-value">Codevigo (PD) — Provincia di Padova</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <form
+            id="contact-form"
+            action="https://formsubmit.co/kakilab.dg@gmail.com"
+            method="POST"
+          >
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="Nuova richiesta dal sito kakilab.it">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="contact-name">Nome *</label>
+                <input type="text" id="contact-name" name="Nome" placeholder="Il tuo nome" required>
+              </div>
+
+              <div class="form-field">
+                <label for="contact-email">Email *</label>
+                <input type="email" id="contact-email" name="Email" placeholder="nome@esempio.it" required>
+              </div>
+
+              <div class="form-field form-field-full">
+                <label for="contact-topic">Tipo di richiesta</label>
+                <select id="contact-topic" name="Richiesta">
+                  <option value="Richiesta preventivo">Richiesta preventivo</option>
+                  <option value="Personalizzazione su misura">Personalizzazione su misura</option>
+                  <option value="Eventi & Matrimoni">Eventi &amp; Matrimoni (buste, inviti, coordinati)</option>
+                  <option value="Domanda generale">Domanda generale</option>
+                </select>
+              </div>
+
+              <div class="form-field form-field-full">
+                <label for="contact-message">Messaggio *</label>
+                <textarea
+                  id="contact-message"
+                  name="Messaggio"
+                  placeholder="Raccontaci la tua idea, quantità, colori o la data del tuo evento..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit-row">
+              <span class="form-note">Rispondiamo di solito entro 24–48 ore.</span>
+              <button type="submit" id="form-submit-btn" class="btn btn-primary">
+                Invia richiesta
+              </button>
+            </div>
+
+            <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <span>&copy; 2026 <span class="footer-accent">Kaki Lab</span></span>
-    <span>Presto online</span>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/caco.svg" alt="KAKILAB">
+        <span>&copy; 2026 KAKILAB by Daniele e Giorgia · Codevigo (PD)</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.instagram.com/kakilab.dg/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.etsy.com/shop/DGLab3D" target="_blank" rel="noopener noreferrer">Etsy</a>
+        <a href="mailto:kakilab.dg@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
+
+  <!-- Product Detail Modal -->
+  <div id="product-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Chiudi finestra">&times;</button>
+      <div class="modal-media">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-content">
+        <span id="modal-cat" class="product-cat"></span>
+        <h3 id="modal-title" class="modal-title"></h3>
+        <span id="modal-tech" class="craft-tool"></span>
+        <p id="modal-desc" class="modal-desc"></p>
+        <ul id="modal-list" class="modal-list"></ul>
+        <div class="modal-actions">
+          <a id="modal-quote-btn" href="#contatti" class="btn btn-primary">Chiedi personalizzazione</a>
+          <a id="modal-etsy-btn" href="https://www.etsy.com/shop/DGLab3D" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Vedi su Etsy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data/site-data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
